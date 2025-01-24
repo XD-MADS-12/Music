@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Music Player</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="music-player">
-        <div class="video-container">
-            <iframe id="youtube-player" width="560" height="315" src="https://youtu.be/RzrqQlcHfCk?si=1uSWokyRPsb-uxdH?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="controls">
-            <button id="playPauseBtn">Play/Pause</button>
-            <button id="muteBtn">Mute</button>
+    <div class="music-player-container">
+        <div class="music-player">
+            <div class="video-container">
+                <iframe id="youtube-player" width="100%" height="100%" src="https://www.youtube.com/embed/RzrqQlcHfCk?autoplay=1&mute=1&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="controls">
+                <button id="playPauseBtn" class="control-btn">Play/Pause</button>
+                <button id="muteBtn" class="control-btn">Mute</button>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
